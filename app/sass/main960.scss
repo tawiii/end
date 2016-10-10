@@ -1,0 +1,300 @@
+@media (min-width: 960px) {
+@import "retina-sprites.scss";
+$sprites: sprite-map("social/*.png", $spacing: 1px);
+$sprites2x: sprite-map("social-retina/*.png", $spacing: 2px);  
+$font: 'Roboto', sans-serif;
+
+.main{
+	text-align: center;
+	border-bottom: 4px solid #ff4e50;
+	&_wrap{
+		width: 960px;
+		margin: 0 auto;
+	}
+	&_title-work{
+		color: #333;
+		font-size: 22px;
+		margin: 94px 0 20px -3px;
+	}
+	&_title-partner{
+		color: #333;
+		font-size: 22px;
+		margin: 530px 0 31px -5px;
+	}
+	&_butn{
+		display: block;
+		width: 188px;
+		margin: 0 auto;
+		line-height: 35px;
+		border: 2px solid #ff4e50;
+		border-radius: 20px;
+		color: #ff4e50;
+		font-size: 14px;
+	}
+	&_title-discover{
+		color: #333;
+		font-size: 22px;
+		margin: 97px 0 24px 0;
+	}
+	&_question{
+		color: #333;
+		font-family: $font;
+		font-size: 18px;
+		font-weight: 300;
+		margin: 31px 0 37px -4px;
+	}
+}
+.carousel{
+	&-hider{
+	width: 301px;
+	overflow-x: hidden;
+    float: left;
+    position: relative;
+    margin: 14px 8px -8px 11px;
+	}
+	&-list{
+		list-style: none;
+	    width: 10000px;
+	    position: relative;
+	}
+	&-arrow-left{
+		// width: 31px;
+		// height: 56px;
+		z-index: 1;
+		position: absolute;
+    	top: 152px;
+    	left: 20px;	
+		@include retina-sprite(btn-left);
+	}
+	&-arrow-right{
+		// width: 31px;
+		// height: 56px;
+		z-index: 1;
+		position: absolute;
+    	top: 152px;
+    	left: 20px;
+		left: 248px;
+		@include retina-sprite(btn-right);
+	}
+	&-element{
+		display: block;
+	    margin-right: 25px;
+	    float: left;
+	    width: 301px;
+	    height: 400px;
+	}
+	&-element_1{
+		@extend .carousel-element;
+	    background:url(../img/slide-1_960.png) no-repeat;
+	}
+	&-element_2{
+		@extend .carousel-element;
+	    background:url(../img/slide-2_960.png) no-repeat;
+	}
+	&-element_3{
+		@extend .carousel-element;
+	    background:url(../img/slide-3_960.png) no-repeat;
+	}
+}
+.text{
+	text-align: left;
+	position: absolute;
+	top: 230px;
+	&-butn{
+		display: block;
+		width: 70px;
+		text-align: center;
+		line-height: 20px;
+		background-color: #ff4e50;
+		border-radius: 10px;
+		color: white;
+		font-size: 10px;
+		font-weight: 400;
+    	letter-spacing: 1.9px;
+		margin: 0 0 15px 21px;
+	}
+	&-title{
+		width: 210px;
+		color: white;
+		font-size: 24px;
+		margin: 0 0 0 19px;
+	}
+	&-description{
+		width: 266px;
+		color: #ccc;
+		font-family: "Myriad Pro", sans-serif;
+		font-size: 14px;
+		font-weight: 400;
+		margin: 11px 0 0 18px;
+    	letter-spacing: 0.2px;
+	}
+}
+
+.figure{
+	display: inline-block;
+	width: 236px;
+	position: relative;
+	margin: 0px 0 44px 0;
+	&_link{
+    	&-marshal{
+			position: absolute;
+			top: -155px;
+    		left: 248px;
+    	}
+    	&-walker{
+			position: absolute;
+			top: -155px;
+    		left: -231px;
+    	}
+	}
+	&_face1{
+		@include retina-sprite(face1);
+		display: block;
+		width: 121px;
+		margin: 0 auto;
+	}
+	&_sprite1{
+		@include retina-sprite(sub_fist_avatar);
+		padding-left: 41px;
+		padding-bottom: 17px;
+		position: relative;
+		top: -36px;
+    	left: 43px;
+	}
+	&_face2{
+		@include retina-sprite(face2);
+		display: block;
+		width: 121px;
+		margin: 0 auto;
+	}
+	&_sprite2{
+		@include retina-sprite(sub_third_avatar);
+		padding-left: 41px;
+		padding-bottom: 17px;
+		position: relative;
+		top: -36px;
+    	left: 43px;
+	}
+	&_face3{
+		@include retina-sprite(face3);
+		display: block;
+		width: 121px;
+		margin: 0 auto;
+	}
+	&_sprite3{
+		@include retina-sprite(sub_second_avatar);
+		padding-left: 41px;
+		padding-bottom: 17px;
+		position: relative;
+		top: -36px;
+    	left: 43px;
+	}
+	&_face4{
+		@include retina-sprite(face4);
+		display: block;
+		width: 121px;
+		margin: 0 auto;
+	}
+	&_sprite4{
+		@include retina-sprite(sub_four_avatar);
+		padding-left: 41px;
+		padding-bottom: 17px;
+		position: relative;
+		top: -36px;
+    	left: 43px;
+	}
+	&_name{
+		color: #333;
+		font-size: 14px;
+		margin: -2px -1px 13px 0;
+	}
+	&_description{
+		width: 217px;
+		margin: 0 auto 26px;
+		color: #666;
+		font-family: $font;
+		font-size: 14px;
+		font-weight: 300;
+	}
+}
+.list{
+	position: relative;
+	margin: 33px 0 0 29px;
+	&_item{
+		height: 310px;
+		&-1{
+			width: 31%;
+		}
+		&-2{
+			width: 31%;
+		}
+		&-3{
+			width: 31%;
+		}
+		&-4{
+			width: 31%;
+			margin-top: 20px;
+		}
+		&-5{
+			width:64%;
+			margin-top: 20px;
+			// margin: 20px 0 0 11px;
+		}
+		&-6{
+			width: 64%;
+			margin-top: 20px;
+		}
+		&-7{
+			width: 31%;
+			margin-top: 20px;
+		}
+	}
+	&_link{
+		position: absolute;
+		width: 100%;
+		top: 0; bottom: 0;
+		background-color: rgba(0,0,0, .2);
+		border-radius:5px;
+	}
+	&_word{
+		position: relative;
+		top: 139px;
+		color:#fff;
+		font-size: 22px;
+	}
+	&_img{
+		width: 100%;
+		height: 100%;
+		border-radius:5px;
+	}
+}
+.form{
+	&_input{
+		width: 223px;
+		line-height: 38px;
+		border: 1px solid #ccc;
+		border-radius: 4px;
+		box-shadow: 0 1px 0 #eee;
+		color: #999;
+		font-family: $font;
+		font-size: 14px;
+		font-weight: 300;
+		margin: 0 4px 10px 0;
+		padding: 0 0 0 15px;
+	}
+	&_butn{
+		width: 163px;
+		line-height: 40px;
+		background-color: #ff4e50;
+		border-radius: 20px;
+		border:none;
+		color: white;
+		font-size: 14px;
+		font-family: Montserrat;
+		font-weight: 700;
+		margin: 0 0 100px 0;
+		cursor: pointer;
+	}
+}	
+
+}

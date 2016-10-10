@@ -1,0 +1,248 @@
+@media screen and (max-width: 767px) {
+// $social-spacing: 1px;
+// @import "social/*.png";
+@import "retina-sprites.scss";
+$sprites: sprite-map("social/*.png", $spacing: 1px);
+$sprites2x: sprite-map("social-retina/*.png", $spacing: 2px);  
+
+$font: 'Roboto', sans-serif;
+
+.main{
+	text-align: center;
+	border-bottom: 4px solid #ff4e50;
+	padding: 34px 0 0 0;
+	&_wrap{
+		width: 320px;
+		margin: 0 auto;
+	}
+	&_title-work{
+		color: #333;
+		font-size: 22px;
+	}
+	&_title-partner{
+		width: 311px;
+		color: #333;
+		font-size: 22px;
+		margin: 788px 0 13px 0;
+	}
+	&_butn{
+		display: block;
+		width: 276px;
+		margin: 0 auto;
+		line-height: 35px;
+		border: 2px solid #ff4e50;
+		border-radius: 20px;
+		color: #ff4e50;
+		font-size: 14px;
+	}
+	&_title-discover{
+		color: #333;
+		font-size: 22px;
+		margin: 34px 0 3px 0;
+	}
+	&_question{
+		color: #333;
+		font-family: $font;
+		font-size: 18px;
+		font-weight: 300;
+		margin: 10px 0 15px -4px;
+	}
+}
+.carousel{
+	&-hider{
+	width: 301px;
+	overflow-x: hidden;
+    float: left;
+    position: relative;
+    margin: 14px 0 -8px 9px;
+	}
+	&-list{
+		list-style: none;
+	    width: 10000px;
+	    padding: 0;
+	    position: relative;
+	}
+	&-element{
+		display: block;
+	    margin-right: 25px;
+	    float: left;
+	    width: 301px;
+	    height: 245px;
+	}
+	&-element_1{
+		@extend .carousel-element;
+	    background:url(../img/slider-1_320.png) no-repeat;
+	}
+	&-element_2{
+		@extend .carousel-element;
+	    background:url(../img/slider-2_320.png) no-repeat;
+	}
+	&-element_3{
+		@extend .carousel-element;
+	    background:url(../img/slider-3_320.png) no-repeat;
+	}
+}
+.text{
+	text-align: left;
+	position: absolute;
+	top: 69px;
+	&-butn{
+		display: block;
+		width: 70px;
+		text-align: center;
+		line-height: 20px;
+		background-color: #ff4e50;
+		border-radius: 10px;
+		color: white;
+		font-size: 10px;
+		font-weight: 400;
+    	letter-spacing: 1.9px;
+		margin: 0 0 15px 23px;
+	}
+	&-title{
+		width: 210px;
+		color: white;
+		font-size: 24px;
+		margin: 0 0 0 20px;
+	}
+	&-description{
+		width: 260px;
+		color: #ccc;
+		font-family: "Myriad Pro", sans-serif;
+		font-size: 14px;
+		font-weight: 400;
+		margin: 11px 0 0 20px;
+    	letter-spacing: 0.2px;
+	}
+}
+
+.figure{
+	&_link{
+	}
+	&_face1{
+		@include retina-sprite(face1); 
+		display: block;
+		width: 121px;
+		margin: 0 auto;
+	}
+	&_sprite1{
+		@include retina-sprite(sub_fist_avatar); 
+		padding-left: 41px;
+		padding-bottom: 17px;
+		position: relative;
+		top: -36px;
+    	left: 43px;
+	}
+	&_face2{
+		@include retina-sprite(face2); 
+		display: block;
+		width: 121px;
+		margin: 0 auto;
+	}
+	&_sprite2{
+		@include retina-sprite(sub_third_avatar); 
+		padding-left: 41px;
+		padding-bottom: 17px;
+		position: relative;
+		top: -36px;
+    	left: 43px;
+	}
+	&_face3{
+		@include retina-sprite(face3); 
+		display: block;
+		width: 121px;
+		margin: 0 auto;
+	}
+	&_sprite3{
+		@include retina-sprite(sub_second_avatar); 
+		padding-left: 41px;
+		padding-bottom: 17px;
+		position: relative;
+		top: -36px;
+    	left: 43px;
+	}
+	&_face4{
+		@include retina-sprite(face4); 
+		display: block;
+		width: 121px;
+		margin: 0 auto;
+	}
+	&_sprite4{
+		@include retina-sprite(sub_four_avatar); 
+		padding-left: 41px;
+		padding-bottom: 17px;
+		position: relative;
+		top: -36px;
+    	left: 43px;
+	}
+	&_name{
+		color: #333;
+		font-size: 14px;
+		margin: -2px 4px 13px 0;
+	}
+	&_description{
+		width: 217px;
+		margin: 0 auto 26px;
+		color: #666;
+		font-family: $font;
+		font-size: 14px;
+		font-weight: 300;
+		padding-right: 8px;
+	}
+}
+.list{
+	margin: 0 0 48px 0;
+	&_item{
+		height: 119px;
+		width: 300px;
+		margin: 9px 0 0 10px;
+		position: relative;
+	}
+	&_link{
+		position: absolute;
+		top: 0; bottom: 0;
+		left: 0; right:0;
+		color:#fff;
+		font-size: 22px;
+		background-color: rgba(0,0,0, .2);
+		border-radius:5px;
+	}
+	&_word{
+		position: relative;
+		top: 46px;
+	}
+	&_img{
+		width: 100%;
+		height: 100%;
+		border-radius:5px;
+	}
+}
+.form{
+	&_input{
+		width: 262px;
+		line-height: 38px;
+		border: 1px solid #ccc;
+		border-radius: 4px;
+		box-shadow: 0 1px 0 #eee;
+		color: #999;
+		font-family: $font;
+		font-size: 14px;
+		font-weight: 300;
+		margin: 0 4px 10px 0;
+		padding: 0 0 0 15px;
+	}
+	&_butn{
+		width: 280px;
+		line-height: 40px;
+		background-color: #ff4e50;
+		border-radius: 20px;
+		border:none;
+		color: white;
+		font-size: 14px;
+		font-family: Montserrat;
+		font-weight: 700;
+		margin: 0 0 40px 0;
+		cursor: pointer;
+	}
+}	
+}

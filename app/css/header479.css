@@ -1,0 +1,53 @@
+@media screen and (max-width: 767px) {
+  .header {
+    background: url(../img/header320.jpg) no-repeat;
+    background-size: cover;
+    padding: 20px 0 138px 0;
+    text-align: center;
+  }
+  .header_wrap {
+    width: 320px;
+    margin: 0 auto;
+  }
+  .header_link {
+    width: 88px;
+    display: inline-block;
+    color: white;
+    font-size: 14px;
+    line-height: 32px;
+    border: 2px solid white;
+    border-radius: 18px;
+    margin: 0 8px 116px -16px;
+  }
+  .header_link-border {
+    border: none;
+  }
+  .header_logo {
+    color: white;
+    font-size: 20px;
+    margin: 0 0 26px -3px;
+    letter-spacing: 0.8px;
+  }
+  .header_title {
+    color: white;
+    font-size: 30px;
+  }
+  .header_under-title {
+    width: 217px;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    margin: 8px 0 14px 51px;
+  }
+  .header_butn {
+    display: block;
+    width: 279px;
+    margin: 0 auto;
+    line-height: 40px;
+    background-color: #ff4e50;
+    border-radius: 20px;
+    color: white;
+    font-size: 14px;
+  }
+}
