@@ -1,37 +1,49 @@
-(function ($) {
-	$.support.cors = true;
-	$('.form_butn').on('click', function (e) {
-		e.preventDefault();
-		var request = $('.form_input').val();
-		$.getJSON("http://api.pixplorer.co.uk/image?word="+request+"&amount=7&size=tb",
-function(data){
-	$('.list').remove();
-	var lodash = $('#mason').text();
-  	var tpl = _.template(lodash);
-  	$('.masonry').append(tpl(data));
-  	$('.form_input').val("");
-	});
-		setTimeout(function () {
-			$('.list').masonry({
-			itemSelector: '.list_item',
-			columnWidth: 51
-		});
-			},1500);
-	});
+;(function ($) { 
+$.support.cors = true; 
 
-	$.getJSON("http://api.pixplorer.co.uk/image?&amount=7&size=tb",
-function(data){
-	var lodash = $('#mason').text();
-  	var tpl = _.template(lodash);
-  	$('.masonry').append(tpl(data));
-});
+$.getJSON("http://api.pixplorer.co.uk/image?&amount=7&size=large", 
+function(data){ 
 
-	setTimeout(function () {
-		$('.list').masonry({
-	  	itemSelector: '.list_item',
-	 	 columnWidth: 51
-	});
-		},1500);
-	
+var lodash = $('#mason').text(); 
+var tpl = _.template(lodash); 
+$('.masonry').append(tpl(data)); 
+}); 
+
+setTimeout(function () { 
+$(".list").masonry({ 
+itemSelector: ".list_item", 
+columnWidth: 2 
+}); 
+}, 1300); 
+
+
+$(".form_butn").click(function(event) { 
+event.preventDefault(); 
+var target = event.target; 
+var valueInput = $(".form_input").val(); 
+var removeValue = null; 
+$('.list').remove();
+if (valueInput.length === 0) { 
+return; 
+} 
+
+$.getJSON("http://api.pixplorer.co.uk/image?word="+valueInput+"&amount=7&size=large", 
+function(data){ 
+var lodash = $('#mason').text(); 
+var tpl = _.template(lodash); 
+$('.masonry').append(tpl(data)); 
+}); 
+
+setTimeout(function () { 
+$(".list").masonry({ 
+itemSelector: ".list_item", 
+columnWidth: 2 
+}); 
+}, 1300); 
+
+removeValue = $(".form_input").val(" "); 
+}); 
+
+
 })(jQuery);
 
