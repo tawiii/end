@@ -221,7 +221,7 @@ $font: 'Roboto', sans-serif;
 	position: relative;
 	margin: 33px 0 0 29px;
 	&_item{
-		height: 310px;
+		// height: 310px;
 		&-1{
 			width: 31%;
 		}
@@ -238,7 +238,6 @@ $font: 'Roboto', sans-serif;
 		&-5{
 			width:64%;
 			margin-top: 20px;
-			// margin: 20px 0 0 11px;
 		}
 		&-6{
 			width: 64%;
@@ -258,7 +257,7 @@ $font: 'Roboto', sans-serif;
 	}
 	&_word{
 		position: relative;
-		top: 139px;
+		top: 80px;
 		color:#fff;
 		font-size: 22px;
 	}

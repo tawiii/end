@@ -1,5 +1,5 @@
 (function ($) {
-"use strict";
+	$.support.cors = true;
 	$('.form_butn').on('click', function (e) {
 		e.preventDefault();
 		var request = $('.form_input').val();
@@ -34,3 +34,4 @@ function(data){
 		},1500);
 	
 })(jQuery);
+

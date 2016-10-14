@@ -368,9 +368,6 @@
     position: relative;
     margin: 33px 0 0 29px;
   }
-  .list_item {
-    height: 310px;
-  }
   .list_item-1 {
     width: 31%;
   }
@@ -406,7 +403,7 @@
   }
   .list_word {
     position: relative;
-    top: 139px;
+    top: 80px;
     color: #fff;
     font-size: 22px;
   }
