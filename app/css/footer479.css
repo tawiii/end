@@ -1,50 +1,70 @@
 @media screen and (max-width: 767px) {
   .footer {
+    border-top: 4px solid #ff4e50;
     text-align: center;
-    position: relative;
-    margin: 0 0 75px 0px;
   }
   .footer_wrap {
-    width: 320px;
     margin: 0 auto;
-  }
-  .footer_maker {
-    display: block;
-    width: 110px;
-    height: 25px;
-    background: url("../img/areto320.png") no-repeat;
-    position: relative;
-    bottom: -147px;
-    right: -104px;
-  }
-  .footer_by {
-    color: #ccc;
-    font-size: 11px;
-    position: absolute;
-    top: -20px;
-    left: 16px;
-  }
-  .footer_logo {
-    display: block;
-    color: #ff4e50;
-    font-size: 16px;
-    margin: -9px 0 11px -3px;
-    letter-spacing: 0.8px;
+    width: 320px;
+    text-align: center;
   }
 
-  .menu_link {
+  .name-company.name-company__mod {
+    margin: 19px 0 13px;
+    color: #ff4e50;
+    font-family: Montserrat;
+    font-size: 16px;
+  }
+
+  .menu-bottom_item {
     display: block;
+  }
+  .menu-bottom_link {
+    display: block;
+    margin: 0 auto 2px;
+    width: 67px;
+    height: 13px;
     color: #333;
+    font-family: Montserrat;
     font-size: 14px;
+    font-weight: 700;
   }
-  .menu_sub-item {
+  .menu-bottom_sub-menu {
+    text-align: left;
+    margin-left: 61px;
+    margin-bottom: 11px;
+  }
+  .menu-bottom_sub-item {
     display: inline-block;
-    margin: 0 5px 13px 4px;
   }
-  .menu_sub-link {
+  .menu-bottom_sub-link {
+    display: block;
+    margin-right: 8px;
     color: #666;
-    font-family: "Roboto", sans-serif;
+    font-family: Roboto;
     font-size: 14px;
     font-weight: 300;
+    line-height: 24px;
+  }
+  .menu-bottom_sub-link1, .menu-bottom_sub-link2, .menu-bottom_sub-link3 {
+    margin-right: 9px;
+  }
+
+  .develop-label {
+    margin-top: 13px;
+    display: block;
+  }
+  .develop-label_title {
+    margin-left: -3px;
+    letter-spacing: 1px;
+    color: #ccc;
+    font-family: Montserrat;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  .develop-label_img {
+    margin-top: 7px;
+    display: block;
   }
 }

@@ -1,57 +1,100 @@
 @media (min-width: 960px) {
   .header {
-    background: url(../img/header960.png) no-repeat;
+    height: 700px;
+    background: url(../img/header-bgr-960.png) no-repeat;
     background-size: cover;
-    padding: 20px 0 234px 0;
-    text-align: center;
   }
   .header_wrap {
-    width: 960px;
     margin: 0 auto;
+    padding: 40px 10px;
+    width: 940px;
+    text-align: center;
+    overflow: hidden;
   }
-  .header_link {
-    width: 88px;
-    display: inline-block;
+  .header_wrap a {
     color: white;
+  }
+
+  .block-registrate {
+    float: right;
+    width: 200px;
+    margin-right: -23px;
+    margin-top: -2px;
+    overflow: hidden;
+  }
+  .block-registrate_item {
+    float: left;
+    display: block;
+    width: 90px;
+    line-height: 36px;
+    font-family: 'Montserrat';
     font-size: 14px;
+    letter-spacing: -0.1px;
+  }
+  .block-registrate_sign {
+    width: 86px;
     line-height: 32px;
     border: 2px solid white;
     border-radius: 18px;
-    margin: 18px -293px 140px 284px;
+    font-family: 'Montserrat';
+    word-spacing: 1px;
   }
-  .header_link-border {
-    border: none;
+  .block-registrate_log {
+    width: 86px;
   }
-  .header_logo {
-    color: white;
-    font-size: 20px;
-    letter-spacing: 0.8px;
-    float: left;
-    margin: 26px 0 0 10px;
-  }
-  .header_title {
-    color: white;
-    font-size: 52px;
+
+  .name-company {
+    position: relative;
+    top: -27px;
+    left: -2px;
+    display: block;
+    width: 178px;
     clear: both;
-    width: 519px;
-    margin: 0 auto;
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
   }
-  .header_under-title {
+
+  .partner {
+    margin-top: 120px;
+  }
+  .partner_title {
+    margin: auto;
+    margin-bottom: 28px;
+    width: 505px;
+    line-height: 63px;
     color: white;
-    font-family: "Roboto", sans-serif;
-    font-size: 23px;
-    font-weight: 300;
-    letter-spacing: 0.5px;
-    margin: 25px 0 33px -2px;
+    font-family: Montserrat;
+    font-size: 52px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -0.5px;
   }
-  .header_butn {
+  .partner_paragraf {
+    margin: auto;
+    margin-bottom: 35px;
+    width: 405px;
+    height: 24px;
+    color: white;
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 300;
+    letter-spacing: -0.12px;
+    line-height: 20px;
+  }
+
+  .btn-partner {
+    margin: 0 auto;
     display: block;
     width: 224px;
-    margin: 0 auto;
     line-height: 40px;
     background-color: #ff4e50;
     border-radius: 20px;
     color: white;
+    font-family: 'Montserrat';
     font-size: 14px;
+    font-weight: 700;
   }
 }
