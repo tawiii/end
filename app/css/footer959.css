@@ -1,11 +1,11 @@
-@media (min-width: 960px) {
+@media (min-width: 768px) and (max-width: 959px) {
   .footer {
     text-align: center;
     position: relative;
     margin: 11px 0 23px 0;
   }
   .footer_wrap {
-    width: 960px;
+    width: 768px;
     margin: 0 auto;
   }
   .footer_maker {
@@ -14,8 +14,8 @@
     width: 110px;
     height: 25px;
     position: relative;
-    bottom: -47px;
-    right: -840px;
+    bottom: -46px;
+    right: -618px;
   }
   .footer_by {
     color: #ccc;
@@ -30,7 +30,7 @@
     font-size: 16px;
     letter-spacing: 0.8px;
     float: left;
-    margin: 0px 0 0 9px;
+    margin: 0px 0 0 39px;
   }
 
   .menu_item {
@@ -38,12 +38,12 @@
   }
   .menu_item-company {
     position: relative;
-    left: -241px;
+    left: -144px;
   }
   .menu_item-partner {
     position: relative;
-    top: -101px;
-    left: -152px;
+    top: -102px;
+    left: -44px;
   }
   .menu_link {
     color: #333;

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>final</title>
+	<link rel="stylesheet" href="public/css/allCss.min.css">
+	<!-- <link rel="stylesheet" href="app/css/style.css"> -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:300,400" rel="stylesheet">
+</head>
+<body>
+	<div class="wrap">
+	<header class="header">
+		<div class="header_wrap">
+			<a href="#" class="header_link header_link-border">Log in</a>
+			<a href="#" class="header_link">Sign up</a>
+			<p class="header_logo">URLAUBSGLÜCK</p>
+			<h1 class="header_title">SHARE YOUR HOLIDAY DREAMS</h1>
+			<p class="header_under-title">And find the perfect partner to fullfill it</p>
+			<a href="#" class="header_butn">Find your holiday partner</a>
+		</div>
+	</header>
+	<main class="main">
+		<div class="main_wrap">
+			<p class="main_title-work">How Urlaubsglück works?</p>
+			<div class="carousel">
+	<script type="text/template" id='sl'>
+			<% for ( var i = 0; i < all.length; i++ ) { %>
+			<div class="carousel-hider">
+				<div class="carousel-arrow-left"><span data-action="left"></span></div>
+				<ul class="carousel-list">
+				<% for ( var j = 0; j < all[i].option.length; j++ ) { %>
+				    <li class="carousel-element <%= all[i].option[j].clas %>">
+					    <div class="text">
+					    <a href="#" class="text-butn"><%= all[i].option[j].step %></a>
+					    <h3 class="text-title"><%= all[i].option[j].h %></h3>
+					    <p class="text-description"><%= all[i].option[j].p %></p>
+					    </div>
+				    </li>
+			    <% } %>
+			    </ul>
+			    <div class="carousel-arrow-right"><span data-action="right"></span></div>
+			</div>
+			<% } %>
+			</script>
+			</div>
+			<h4 class="main_title-partner">Meet a partner for your best holiday</h4>
+			<figure class="figure">
+			<a href="#" class="figure_link figure_link-hunter1">
+				<span class="figure_face1"></span>
+				<span class="figure_sprite1"></span>	
+				<figcaption>
+				<p class="figure_name">Bradley Hunter</p>
+				<p class="figure_description">Based in Chicago. I love playing tennis and loud music.</p>
+				</figcaption>
+				</a>
+			</figure >
+			<figure class="figure">
+			<a href="#" class="figure_link figure_link-marshal">
+				<span class="figure_face2"></span>
+				<span class="figure_sprite2"></span>
+				<figcaption>
+				<p class="figure_name">Lucas Marsha</p>
+				<p class="figure_description">I get my inspiration from nature and objects around me. I have a passion to colours, typography and skateboards.</p>
+				</figcaption>
+				</a>
+			</figure>
+			<figure class="figure">
+			<a href="#" class="figure_link figure_link-walker">
+				<span class="figure_face3"></span>
+				<span class="figure_sprite3"></span>
+				<figcaption>
+				<p class="figure_name">Heather Walker</p>
+				<p class="figure_description">I'm a happy person that loves cats and climbing on mountains.
+				</p>
+				</figcaption>
+				</a>
+			</figure>
+			<figure class="figure">
+			<a href="#" class="figure_link figure_link-hunter2">
+				<span class="figure_face4"></span>
+				<span class="figure_sprite4"></span>
+				<figcaption>
+				<p class="figure_name">Bradley Hunter</p>
+				<p class="figure_description">Based in Chicago. I love playing tennis and loud music.</p>
+				</figcaption>
+				</a>
+			</figure>
+			<a href="#" class="main_butn">See other partners</a>
+			<p class="main_title-discover">Discover holiday activity ideas</p>
+			<div class="masonry">
+			<script type="text/template" id='mason'>
+				<ul class="list">
+					<% for ( var i = 0; i < images.length; i++ ) { %>
+					<li class="list_item list_item-<%= i + 1 %>">
+					<a class="list_link" href="#"><span class="list_word"><%= images[i].word %></span></a>
+					<img class="list_img" src="<%= images[i].imageurl %>" alt="">
+					</li>
+					<% } %>
+				</ul>
+	 		</script>
+			</div>
+			<p class="main_title-discover">Discover holiday activity ideas</p>
+			<p class="main_question">Hi! What are your holiday interests?</p>
+			<form action="#" class="form">
+				<input class="form_input" type="text" placeholder="Enter your interests">
+				<input  class="form_butn" type="submit" value="Search partners">
+			</form>
+		</div>
+	</main>
+	<footer class="footer">
+		<div class="footer_wrap">
+			<a href="#" class="footer_maker"><span class="footer_by">DESIGNED BY</span>
+			</a>
+			<a href="#" class="footer_logo">URLAUBSGLÜCK</a>
+			<ul class="menu">
+				<li class="menu_item menu_item-company"><a href="#" class="menu_link">Company</a>
+					<ul class="menu_sub">
+						<li class="menu_sub-item"><a href="#" class="menu_sub-link">About</a></li>
+						<li class="menu_sub-item"><a href="#" class="menu_sub-link">Contacts</a></li>
+						<li class="menu_sub-item"><a href="#" class="menu_sub-link">Press</a></li>
+						<li class="menu_sub-item"><a href="#" class="menu_sub-link">Blog</a></li>
+					</ul>
+				</li>
+				<li class="menu_item menu_item-partner"><a href="#" class="menu_link">Partners</a></li>
+			</ul>
+		</div>
+	</footer>
+	</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.2/masonry.pkgd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.9.0/lodash.min.js"></script>
+<script src="public/js/index.js"></script>
+<!-- <script src="app/js/js.js"></script> -->
+<!-- <script src="app/js/masonry.js"></script> -->
+</body>
+</html>
+
+
+
+			

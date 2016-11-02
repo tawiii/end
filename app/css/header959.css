@@ -1,12 +1,12 @@
-@media (min-width: 960px) {
+@media (min-width: 768px) and (max-width: 959px) {
   .header {
-    background: url(../img/header960.png) no-repeat;
+    background: url(../img/header768.png) no-repeat;
     background-size: cover;
     padding: 20px 0 234px 0;
     text-align: center;
   }
   .header_wrap {
-    width: 960px;
+    width: 768px;
     margin: 0 auto;
   }
   .header_link {
@@ -17,7 +17,7 @@
     line-height: 32px;
     border: 2px solid white;
     border-radius: 18px;
-    margin: 18px -293px 140px 284px;
+    margin: 18px -139px 140px 130px;
   }
   .header_link-border {
     border: none;
@@ -27,7 +27,7 @@
     font-size: 20px;
     letter-spacing: 0.8px;
     float: left;
-    margin: 26px 0 0 10px;
+    margin: 26px 0 0 48px;
   }
   .header_title {
     color: white;
