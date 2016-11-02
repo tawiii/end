@@ -1,0 +1,31 @@
+// @import url(footer479.css);
+// @import url(footer959.css);
+// @import url(footer960.css);
+// @import url(header479.css);
+// @import url(header959.css);
+// @import url(header960.css);
+// @import url(main479.css);
+// @import url(main959.css);
+// @import url(main960.css);
+
+// @import "compass/utilities/sprites";
+// $social-spacing: 1px;
+// @import "social/*.png";
+// @import "social-retina/*.png";
+
+
+*{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	text-decoration: none;
+	outline: none;
+}
+.wrap{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	overflow-x: hidden;
+}
+
+// font-family: 'Montserrat', sans-serif;
+// font-family: 'Roboto', sans-serif;

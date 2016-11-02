@@ -1,0 +1,57 @@
+@media screen and (max-width: 767px) {
+$font: 'Roboto', sans-serif;
+
+.footer{
+	text-align: center;
+	position: relative;
+	margin: 0 0 75px 0px;
+	&_wrap{
+		width: 320px;
+		margin: 0 auto;
+	}
+	&_maker{
+		display: block;
+		width: 110px;
+		height: 25px;
+		background: url('../img/areto320.png')no-repeat;
+		position: relative;
+		bottom: -147px;
+    	right: -104px;
+	}
+	&_by{
+		color: #ccc;
+		font-size: 11px;
+		position: absolute;
+		top: -20px;
+    	left: 16px;
+	}
+	&_logo{
+		display: block;
+		color: #ff4e50;
+		font-size: 16px;
+		margin: -9px 0 11px -3px;
+    	letter-spacing: 0.8px;
+	}
+}
+.menu{
+	&_item{
+	}
+	&_link{
+		display: block;
+		color: #333;
+		font-size: 14px;
+	}
+	&_sub{
+		&-item{
+			display: inline-block;
+			margin: 0 5px 13px 4px;
+		}
+		&-link{
+			color: #666;
+			font-family: $font;
+			font-size: 14px;
+			font-weight: 300;
+		}
+	}
+}
+}
